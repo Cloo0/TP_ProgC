@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-
+void calcul_cercle(double r) {
+    double pi = 3.1416;
+    printf("L'aire du cercle = %f\n", pi*(r*r));
+    printf("Le périmètre du cercle = %f\n", pi*(r+r));
+    printf("Le rayon du cercle  = %f\n",r);
+}
 int main() {
-double pi = 3.1416;
-double r = 6;  
-    printf("L'air du cercle = %f", pi*(r*r));
-   printf("Le périmètre du cercle = %f", pi*(r+r));
+double r = 6;
+calcul_cercle(r);
+return 0;
 }
 
